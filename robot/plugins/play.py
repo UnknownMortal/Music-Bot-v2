@@ -68,7 +68,7 @@ from robot.config import (
     START_IMG,
     BOT_USERNAME,
 )
-from Codexun.setup.filters import command
+from robot.setup.filters import command
 from robot.setup.decorators import errors, sudo_users_only
 from robot.setup.administrator import adminsOnly
 from robot.setup.errors import DurationLimitError
@@ -139,7 +139,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 
     image = Image.open(f"./background.png")
     black = Image.open("etc/black.jpg")
-    img = Image.open("etc/CodexunSq.png")
+    img = Image.open("etc/robot.png")
     image5 = changeImageSize(1280, 720, img)
     image1 = changeImageSize(1280, 720, image)
     image1 = image1.filter(ImageFilter.BoxBlur(10))
