@@ -445,10 +445,10 @@ async def play(_, message: Message):
             return await lel.edit(
                 "**Don't be a crazy 🙅🏻 Give me a song name to play!\n\nExample \n/play hamanwa mere**"
             )
-        await lel.edit("**🔍 | Finding...**")
+        await lel.edit("**ғɪɴᴅɪɴɢ 🔎 sᴇʀᴠᴇʀ !!**")
         query = message.text.split(None, 1)[1]
         # print(query)
-        await lel.edit("**⏳ | Downloading...**")
+        await lel.edit("**ɢᴇᴛᴛɪɴɢ..... ʀᴇsᴘᴏɴsᴇ.....**")
         try:
             results = YoutubeSearch(query, max_results=5).to_dict()
             url = f"https://youtube.com{results[0]['url_suffix']}"
@@ -556,7 +556,7 @@ async def play(_, message: Message):
                     taken = "00:00"
                 size = d["_total_bytes_str"]
                 lel.edit(
-                    f"**Downloaded Successfully**\n\n**{title[:50]}...\n\n**FileSize: {size}**\n■■■■■■■■■■ `100%`\n**Time Taken: {taken} sec**\n\n<b>__FFmpeg processing...__</b>"
+                    f"**ᴅᴏᴡɴʟᴏᴀᴅ ғɪɴɪsʜ !!**\n\n**{title[:50]}...\n\n**ғɪʟᴇ sɪᴢᴇ : {size}**\n■■■■■■■■■■ `100%`\n**ᴛɪᴍᴇ : {taken} sec**\n\n<b> ғғᴍᴘᴇᴊ ʀᴜɴɴɪɴɢ....</b>"
                 )
                 print(f"[{url_suffix}] Downloaded| Elapsed: {taken} seconds")
 
@@ -569,7 +569,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="[ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ 📡]({})\n\n• ᴜsᴇʀ : **{}**\n• ɢʀᴏᴜᴘ : [{}](https://t.me/M8N_OFFICIAL)".format(
+            caption="**[ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ 📡]({})**\n\n• ᴜsᴇʀ : {}\n• ɢʀᴏᴜᴘ : [{}](https://t.me/M8N_OFFICIAL)".format(
                 url, message.from_user.mention(), message.chat.title
             ),
         )
@@ -595,7 +595,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="[ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ 📡]({})\n\n• ᴜsᴇʀ : **{}**\n• ɢʀᴏᴜᴘ : [{}](https://t.me/M8N_OFFICIAL)".format(
+            caption="**[ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴠɪᴀ ʏᴏᴜᴛᴜʙᴇ 📡]({})**\n\n• ᴜsᴇʀ : {}\n• ɢʀᴏᴜᴘ : [{}](https://t.me/M8N_OFFICIAL)".format(
                 url, message.from_user.mention(), message.chat.title
             ),
         )
