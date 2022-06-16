@@ -452,7 +452,7 @@ async def cbcmnds(_, query: CallbackQuery):
 • /song 
 - For download music
 
-Powered by **@{UPDATE}** !""",
+Powered by **@{UPDATE}** !!""",
         reply_markup=InlineKeyboardMarkup(
             [
               [
@@ -461,7 +461,7 @@ Powered by **@{UPDATE}** !""",
                     InlineKeyboardButton(
                         "ᴏᴡɴᴇʀ", callback_data="cbowncmnds")
                 ],
-              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbhome")]]
+              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="home")]]
         ),
     )
 @Client.on_callback_query(filters.regex("cbowncmnds"))
@@ -496,11 +496,11 @@ async def cbowncmnds(_, query: CallbackQuery):
 • /leaveall 
 - leaving assistant from all chats
 
-Powered by **@{UPDATE}** !""",
+Powered by **@{UPDATE}** !!""",
         reply_markup=InlineKeyboardMarkup(
             [
               
-              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbcmnds")]]
+              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cmds")]]
         ),
     )
 
@@ -547,7 +547,7 @@ You can also open this menu through\n/menu and /settings command.
 **Only admins can use this buttons 📍**""",
         reply_markup=InlineKeyboardMarkup(
             [
-            [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbcmnds")]]
+            [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cmds")]]
         ),
     )
 
