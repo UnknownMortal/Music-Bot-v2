@@ -49,7 +49,7 @@ async def member_permissions(chat_id: int, user_id: int):
     return perms
 
 
-from m8n.utils.administrator import adminsOnly
+from robot.setup.administrator import adminsOnly
 
 
 @app.on_message(command(["pause"]) & other_filters)
