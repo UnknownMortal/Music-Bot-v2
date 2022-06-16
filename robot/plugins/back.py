@@ -429,7 +429,7 @@ async def cleandb(_, CallbackQuery):
         await CallbackQuery.answer(f"Nothing is playing on voice chat.", show_alert=True)
 
 
-@Client.on_callback_query(filters.regex("cbcmnds"))
+@Client.on_callback_query(filters.regex("cmds"))
 async def cbcmnds(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""**{BOT_NAME} Bot Commands 💡**
@@ -457,11 +457,11 @@ Powered by **@{UPDATE}** !""",
             [
               [
                     InlineKeyboardButton(
-                        "Menu", callback_data="cbstgs"),
+                        "ᴍᴇɴᴜ", callback_data="cbstgs"),
                     InlineKeyboardButton(
-                        "Sudo/Owner", callback_data="cbowncmnds")
+                        "ᴏᴡɴᴇʀ", callback_data="cbowncmnds")
                 ],
-              [InlineKeyboardButton("🔙  Back Home", callback_data="cbhome")]]
+              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbhome")]]
         ),
     )
 @Client.on_callback_query(filters.regex("cbowncmnds"))
@@ -500,7 +500,7 @@ Powered by **@{UPDATE}** !""",
         reply_markup=InlineKeyboardMarkup(
             [
               
-              [InlineKeyboardButton("🔙  Back Home", callback_data="cbcmnds")]]
+              [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbcmnds")]]
         ),
     )
 
@@ -533,21 +533,21 @@ async def cbstgs(_, query: CallbackQuery):
 
 After you played your song some menu buttons will be comes to manage your music playing on voice chat. They are as follows :
 
-• ▷ 
+• ▶️ 
 - Resume Music
-• II 
+• ⏸️
 - Pause Music
-• ▢  
+• ⏹️ 
 - End Music
-• ‣‣ 
+• ⏩ 
 - Skip Music
 
-You can also open this menu through /menu and /settings command.
+You can also open this menu through\n/menu and /settings command.
 
 **Only admins can use this buttons 📍**""",
         reply_markup=InlineKeyboardMarkup(
             [
-            [InlineKeyboardButton("🔙  Back Home", callback_data="cbcmnds")]]
+            [InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="cbcmnds")]]
         ),
     )
 
