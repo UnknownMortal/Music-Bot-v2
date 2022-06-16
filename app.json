@@ -3,7 +3,7 @@
     "description": "Telegram Music Bot from Team M8N allows you to stream music trought the telegram voice chat feature !!",
    "logo": "https://telegra.ph/file/7c8fc17112d22814da2e9.jpg",
     "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
-    "repository": "https://github.com/PavanMagar/CodexunMusic",
+    "repository": "https://github.com/UnknownMortal/Music-Bot-v2",
     "stack": "container",
     "env": {
         "SESSION_NAME": {
