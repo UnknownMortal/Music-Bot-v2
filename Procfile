@@ -1,1 +1,1 @@
-worker: python3 -m Romeo
+worker: python3 -m robot
