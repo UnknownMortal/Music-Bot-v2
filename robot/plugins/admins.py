@@ -75,7 +75,7 @@ async def pause(_, message: Message):
     await music_off(chat_id)
     await calls.pytgcalls.pause_stream(chat_id)
     await message.reply_text(
-        f"• Paused ▶️ Assistant\n• By : {checking}"
+        f"• ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ▶️ ᴘᴀᴜsᴇᴅ\n• ᴀᴅᴍɪɴ : {checking}"
     )
 
 
@@ -103,7 +103,7 @@ async def resume(_, message: Message):
         await music_on(chat_id)
         await calls.pytgcalls.resume_stream(chat_id)
         await message.reply_text(
-            f"• Resumed ⏸ Music\n• By : {checking}"
+            f"• ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ⏸ ʀᴇsᴜᴍᴇᴅ\n• ᴀᴅᴍɪɴ : {checking}"
         )
 
 
@@ -127,7 +127,7 @@ async def stop(_, message: Message):
         await remove_active_chat(chat_id)
         await calls.pytgcalls.leave_group_call(chat_id)
         await message.reply_text(
-            f"• Music ❌ Stopped\n• By : {checking}"
+            f"• ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ❌ sᴛᴏᴘᴘᴇᴅ\n• ᴀᴅᴍɪɴ : {checking}"
         )
     else:
         return await message.reply_text(
@@ -169,7 +169,7 @@ async def skip(_, message: Message):
                 ),
             )
             await message.reply_text(
-                f"• Skipped ⏩ Music\n• By : {checking}"
+                f"• ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ⏯ sᴋɪᴘᴘᴇᴅ\n• ᴀᴅᴍɪɴ : {checking}"
             )
 
 
