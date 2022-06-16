@@ -16,10 +16,10 @@ from robot.core.queue import (
     is_music_playing,
     music_off,
 )
-from m8n.calls import calls
-from m8n.setup.filters import command, other_filters
-from m8n.setup.decorators import sudo_users_only
-from m8n.calls.queues import clear, get, is_empty, put, task_done
+from robot.calls import calls
+from robot.setup.filters import command, other_filters
+from robot.setup.decorators import sudo_users_only
+from robot.calls.queues import clear, get, is_empty, put, task_done
 
 
 async def member_permissions(chat_id: int, user_id: int):
