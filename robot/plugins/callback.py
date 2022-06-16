@@ -4,10 +4,10 @@ from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMa
 from robot.config import BOT_NAME, OWNER_USERNAME, UPDATE, SUPPORT, BOT_USERNAME
 
 
-@Client.on_callback_query(filters.regex("start"))
+@Client.on_callback_query(filters.regex("home"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""ᴡᴇʟᴄᴏᴍᴇ : [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
+        f"""ᴡᴇʟᴄᴏᴍᴇ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
 
 ɪ ᴀᴍ ᴩᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ᴩʟᴀʏᴇʀ ʙᴏᴛ ᴡɪᴛʜ sᴏᴍᴇ ᴀᴡᴇsᴏᴍᴇ ᴀɴᴅ ᴜsᴇғᴜʟ ғᴇᴀᴛᴜʀᴇs.
 
