@@ -90,4 +90,18 @@ async def cbhome(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("repoinfo"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""
+        f"""ᴀʙᴏᴜᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 
+
+ᴛʜɪs ʀᴇᴘᴏ ɪs ᴏɴʟʏ ᴍᴀᴅᴇ ғᴏʀ ᴅᴇᴘʟᴏʏɪɴɢ ᴀ ᴘᴏᴡᴇʀғᴜʟ ᴍᴜsɪᴄ ʙᴏᴛ ᴏɴ ʜᴇʀᴏᴋᴜ ᴡɪᴛʜᴏᴜᴛ ғᴀᴄɪɴɢ ʜᴇʀᴏᴋᴜ ᴀᴄᴄᴏᴜɴᴛ ʙᴀɴɴɪɴɢ ᴘʀᴏʙᴇʟᴍ.
+
+ғᴏɴᴛ ᴜsᴇᴅ : sᴍᴀʟʟ ᴄᴀᴘs
+
+🔗 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : https://github.com/UnknownMortal/Music-Bot-v2""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="others")
+                ],
+            ]
+        ),
+    )
