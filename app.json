@@ -1,1 +1,92 @@
-
+{
+    "name": "M8N Music Bot v2.0",
+    "description": "Telegram Music Bot from Team M8N allows you to stream music trought the telegram voice chat feature !!",
+   "logo": "https://telegra.ph/file/7c8fc17112d22814da2e9.jpg",
+    "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
+    "repository": "https://github.com/PavanMagar/CodexunMusic",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string of your assistant account",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "fill with your telegram id as the owner of the bot",
+            "required": true,
+            "value": "2056407064"
+        },
+        "ASSID": {
+            "description": "fill with telegram id of your assistant account",
+            "required": true,
+            "value": ""
+        },
+        "ASSNAME": {
+            "description": "fill with telegram name of your assistant account",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": "fill with telegram username of your assistant account without @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "fill with telegram id of your bot",
+            "required": true,
+            "value": ""
+        },
+        "BOT_USERNAME": {
+            "description": "fill with telegram username of bot without @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_NAME": {
+            "description": "fill with telegram name of bot",
+            "required": true,
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "fill with your bot support group, please fill valid username",
+            "required": false,
+            "value": "TeamCodexun"
+        },
+        "UPDATE": {
+            "description": "fill with your bot update channel, please fill valid username",
+            "required": false,
+            "value": "Codexun"
+        },
+        "API_ID": {
+            "description": "your Api ID from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "your Api Hash from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "fill with the user id who can you want to set as sudo user (separate with space).",
+            "required": true,
+            "value": "2056407064"
+        },
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "fill with the mongodb url get from mongodb.com (don't use mine below !)",
+            "required": true,
+            "value": ""
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
