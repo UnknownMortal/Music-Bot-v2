@@ -6,7 +6,7 @@ from pytgcalls import (__version__ as pytover)
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, ChatJoinRequest
 
 from robot.setup.filters import command
-from robot.config import BOT_NAME, OWNER_USERNAME, UPDATE, SUPPORT
+from robot.config import BOT_NAME, OWNER_USERNAME, UPDATE, SUPPORT, BOT_USERNAME
 
 
 @Client.on_message(command("start") & filters.private & ~filters.edited)
@@ -17,17 +17,19 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🏳‍🌈 About", callback_data="cbabout"),
+                        "🗂 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cmds"),
                     InlineKeyboardButton(
-                        "☁️ Others", callback_data="others")
+                        "🆘 ʜᴇʟᴘ", callback_data="others")
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗂 Commands", callback_data="cbevery")
+                        "✚ ᴄʟɪᴄᴋ ʜᴇʀᴇ ᴛᴏ ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
                 ],
                 [
                     InlineKeyboardButton(
-                        "✚ Click here to Summon Me", url=f"https://t.me/{BOT_USERNAME}?startgroup=true")
+                        "📡 ᴄʜᴀɴɴᴇʟ", callback_data="cbabout"),
+                    InlineKeyboardButton(
+                        "☁️ ᴏᴛʜᴇʀs", callback_data="others")
                 ]
            ]
         ),
