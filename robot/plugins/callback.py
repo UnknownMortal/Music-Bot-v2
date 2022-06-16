@@ -33,3 +33,28 @@ async def cbhome(_, query: CallbackQuery):
            ]
         ),
     )
+
+
+@Client.on_callback_query(filters.regex("others"))
+async def cbhome(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""ʜᴇʏʏ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
+
+ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴs ɢɪᴠᴇɴ ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ :""",
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🗂 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cmds"),
+                    InlineKeyboardButton(
+                        "🆘 ʜᴇʟᴘ", url=f"https://t.me/{SUPPORT}")
+                ],
+                [
+                    InlineKeyboardButton(
+                        "📡 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATE}"),
+                    InlineKeyboardButton(
+                        "☁️ ᴏᴛʜᴇʀs", callback_data="others")
+                ]
+           ]
+        ),
+    )
