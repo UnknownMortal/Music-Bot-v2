@@ -54,6 +54,9 @@ async def others(_, query: CallbackQuery):
                         "🍭 ᴄʀᴇᴅɪᴛs", callback_data="credit"),
                     InlineKeyboardButton(
                         "🍀 ʀᴇᴘᴏ ɪɴғᴏ", callback_data="repoinfo")
+                ],
+                [
+                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="home")
                 ]
            ]
         ),
@@ -104,4 +107,5 @@ async def repoinfo(_, query: CallbackQuery):
                 ],
             ]
         ),
+        disable_web_page_preview=True,
     )
