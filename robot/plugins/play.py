@@ -65,7 +65,7 @@ from robot.config import (
     SUPPORT,
     UPDATE,
     BOT_NAME,
-    START_IMG,
+    START_PIC,
     BOT_USERNAME,
 )
 from robot.setup.filters import command
