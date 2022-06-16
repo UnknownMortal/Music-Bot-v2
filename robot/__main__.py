@@ -57,7 +57,7 @@ Client(
     API_ID,
     API_HASH,
     bot_token=BOT_TOKEN,
-    plugins={"root": "m8n.modules"},
+    plugins={"root": "robot.plugins"},
 ).start()
 
 run()
