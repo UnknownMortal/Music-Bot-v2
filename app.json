@@ -15,6 +15,11 @@
             "required": true,
             "value": "5058236569"
         },
+        "OWNER_USERNAME": {
+            "description": "fill with the bot owner username without @",
+            "required": true,
+            "value": "Its_romeoo"
+        },
         "ASSID": {
             "description": "fill with telegram id of your assistant account",
             "required": true,
