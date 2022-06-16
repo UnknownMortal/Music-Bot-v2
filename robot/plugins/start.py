@@ -23,7 +23,7 @@ async def start_(client: Client, message: Message):
                     InlineKeyboardButton(
                         "🗂 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cmds"),
                     InlineKeyboardButton(
-                        "🆘 ʜᴇʟᴘ", callback_data="others")
+                        "🆘 ʜᴇʟᴘ", url=f"https://t.me/{SUPPORT}")
                 ],
                 [
                     InlineKeyboardButton(
@@ -31,7 +31,7 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "📡 ᴄʜᴀɴɴᴇʟ", callback_data="cbabout"),
+                        "📡 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATE}"),
                     InlineKeyboardButton(
                         "☁️ ᴏᴛʜᴇʀs", callback_data="others")
                 ]
