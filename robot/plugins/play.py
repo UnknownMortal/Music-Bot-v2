@@ -307,8 +307,8 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
-            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url="https://youtube.com"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="cbmenu"),
         ],[
             InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
@@ -348,8 +348,8 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
-            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url="https://youtube.com"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="cbmenu"),
         ],[
             InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
@@ -480,8 +480,8 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
-            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", url="https://youtube.com"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="cbmenu"),
         ],[
             InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
