@@ -5,7 +5,7 @@ from robot.config import BOT_NAME, OWNER_USERNAME, UPDATE, SUPPORT, BOT_USERNAME
 
 
 @Client.on_callback_query(filters.regex("home"))
-async def cbhome(_, query: CallbackQuery):
+async def home(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""ᴡᴇʟᴄᴏᴍᴇ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
 
@@ -36,7 +36,7 @@ async def cbhome(_, query: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("others"))
-async def cbhome(_, query: CallbackQuery):
+async def others(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""ʜᴇʏʏ [{query.message.chat.first_name}](tg://user?id={query.message.chat.id})
 
@@ -45,7 +45,7 @@ async def cbhome(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🗯️ ʜᴇʀᴏᴋᴜ", url=f"https://dashboard.heroku.com/"),
+                        "🗯️ ʜᴇʀᴏᴋᴜ", url=f"https://www.google.com/url?sa=t&source=web&rct=j&url=https://www.heroku.com/&ved=2ahUKEwj05-Kp0rL4AhVFT2wGHXu5BRYQFnoECAwQAQ&usg=AOvVaw1V4lhSv6mb_lZj6UUCUXpS"),
                     InlineKeyboardButton(
                         "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/UnknownMortal/Music-Bot-v2")
                 ],
@@ -61,7 +61,7 @@ async def cbhome(_, query: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("credit"))
-async def cbhome(_, query: CallbackQuery):
+async def credit(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""ᴄʀᴇᴅɪᴛs ғᴏʀ ᴛʜɪs ʙᴏᴛ 🍀
 
@@ -88,7 +88,7 @@ async def cbhome(_, query: CallbackQuery):
 
 
 @Client.on_callback_query(filters.regex("repoinfo"))
-async def cbhome(_, query: CallbackQuery):
+async def repoinfo(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""ᴀʙᴏᴜᴛ ᴛʜᴇ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ : 
 
