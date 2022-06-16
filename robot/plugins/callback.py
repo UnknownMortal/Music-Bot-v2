@@ -45,7 +45,7 @@ async def cbhome(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🦊 ғᴏx ʟᴇᴠɪ", url=f" "),
+                        " ", url=f" "),
                     InlineKeyboardButton(
                         "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/UnknownMortal/Music-Bot-v2")
                 ],
@@ -63,4 +63,24 @@ async def cbhome(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("credit"))
 async def cbhome(_, query: CallbackQuery):
     await query.edit_message_text(
-        f""" """,
+        f"""ᴄʀᴇᴅɪᴛs ғᴏʀ ᴛʜɪs ʙᴏᴛ 🍀
+
+• @Its_romeoo 
+- ʀᴇᴘᴏ ᴅᴇᴠᴇʟᴏᴘᴇʀ !! 
+
+• @Cool_Mortal
+- sᴜᴘᴘᴏʀᴛ & ᴜᴘᴅᴀᴛᴇs ᴍᴀɪɴᴛᴀɪɴᴇʀ
+
+• @{OWNER_USERNAME}
+- ʙᴏᴛ ᴏᴡɴᴇʀ
+
+
+ᴛʜᴀɴᴋs ᴀ ʟᴏᴛ ғᴏʀ ᴄᴏɴᴛʀɪʙᴜᴛɪɴɢ ʏᴏᴜʀ ᴛɪᴍᴇ ᴀɴᴅ sᴋɪʟʟs !!""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("⬅️ ʙᴀᴄᴋ", callback_data="others")
+                ],
+            ]
+        ),
+    )
