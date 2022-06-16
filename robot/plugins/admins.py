@@ -66,11 +66,11 @@ async def pause(_, message: Message):
     chat_id = message.chat.id
     if not await is_active_chat(chat_id):
         return await message.reply_text(
-            "❌ __**I dont think if something's playing on voice chat**__"
+            "• ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ❌"
         )
     elif not await is_music_playing(message.chat.id):
         return await message.reply_text(
-            "❌ __**I dont think if something's playing on voice chat**__"
+            "• ɴᴏᴛʜɪɴɢ ɪs ᴘʟᴀʏɪɴɢ ❌"
         )
     await music_off(chat_id)
     await calls.pytgcalls.pause_stream(chat_id)
