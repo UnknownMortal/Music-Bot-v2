@@ -4,10 +4,10 @@ from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant, FloodWait
 
 from robot import app, ASSUSERNAME
-from robot.utils.decorators import sudo_users_only, errors
-from robot.utils.administrator import adminsOnly
-from robot.utils.filters import command
-from robot.tgcalls import client as USER
+from robot.setup.decorators import sudo_users_only, errors
+from robot.setup.administrator import adminsOnly
+from robot.setup.filters import command
+from robot.calls import client as USER
 
 
 @app.on_message(
