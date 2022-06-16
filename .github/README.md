@@ -72,6 +72,6 @@ python3 main.py # Run the bot
 
 ### <b> 💖 Credits </b>
 - [𝐑ᴏ𝐌ᴇ𝐎 x𝐃](https://github.com/Its_romeoo): Developer
-- [xᴏ xᴏ](https://telegram.me/Cool_Mortal): Manager
+- [𝗫𝗼 𝗫𝗼](https://telegram.me/Cool_Mortal): Manager
 
 [![ForTheBadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
