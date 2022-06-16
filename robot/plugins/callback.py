@@ -45,16 +45,22 @@ async def cbhome(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        "🗂 ᴄᴏᴍᴍᴀɴᴅs", callback_data="cmds"),
+                        "🦊 ғᴏx ʟᴇᴠɪ", url=f" "),
                     InlineKeyboardButton(
-                        "🆘 ʜᴇʟᴘ", url=f"https://t.me/{SUPPORT}")
+                        "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/UnknownMortal/Music-Bot-v2")
                 ],
                 [
                     InlineKeyboardButton(
-                        "📡 ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/{UPDATE}"),
+                        "🍭 ᴄʀᴇᴅɪᴛs", callback_data="credit"),
                     InlineKeyboardButton(
-                        "☁️ ᴏᴛʜᴇʀs", callback_data="others")
+                        "🍀 ᴍᴇɴᴜ", callback_data="abmenu")
                 ]
            ]
         ),
     )
+
+
+@Client.on_callback_query(filters.regex("credit"))
+async def cbhome(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f""" """,
