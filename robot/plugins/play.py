@@ -307,10 +307,10 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("⚙️ Manage", callback_data="cbmenu"),
-            InlineKeyboardButton("About 👨🏻‍💻", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
         ],[
-            InlineKeyboardButton("Close 🗑️", callback_data="cls"),
+            InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
         
     ]
@@ -348,10 +348,10 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("⚙️ Manage", callback_data="cbmenu"),
-            InlineKeyboardButton("About 👨🏻‍💻", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
         ],[
-            InlineKeyboardButton("Close 🗑️", callback_data="cls"),
+            InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
         
     ]
@@ -480,10 +480,10 @@ async def play(_, message: Message):
     [
         
        [
-            InlineKeyboardButton("⚙️ Manage", callback_data="cbmenu"),
-            InlineKeyboardButton("About 👨🏻‍💻", callback_data="nonabout"),
+            InlineKeyboardButton("🎥 ᴡᴀᴛᴄʜ", callback_data="cbmenu"),
+            InlineKeyboardButton("⚙ ᴍᴇɴᴜ", callback_data="nonabout"),
         ],[
-            InlineKeyboardButton("Close 🗑️", callback_data="cls"),
+            InlineKeyboardButton("🚫 ᴄʟᴏsᴇ", callback_data="cls"),
         ],
         
     ]
