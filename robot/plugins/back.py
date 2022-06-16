@@ -38,10 +38,10 @@ from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForb
 
 
 from robot.calls import calls, queues
-from Codexun.calls.youtube import download
-from Codexun.calls import convert as cconvert
-from Codexun.calls.calls import client as ASS_ACC
-from Codexun.core.queue import (
+from robot.calls.youtube import download
+from robot.calls import convert as cconvert
+from robot.calls.calls import client as ASS_ACC
+from robot.core.queue import (
     get_active_chats,
     is_active_chat,
     add_active_chat,
@@ -71,7 +71,7 @@ from robot.config import (
 )
 from robot.setup.filters import command
 from robot.setup.decorators import errors, sudo_users_only
-from Codexun.utils.administrator import adminsOnly
+from robot.setup.administrator import adminsOnly
 from robot.setup.errors import DurationLimitError
 from robot.setup.gets import get_url, get_file_name
 from robot.plugins.admins import member_permissions
