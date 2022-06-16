@@ -45,7 +45,7 @@ async def cbhome(_, query: CallbackQuery):
             [
                 [
                     InlineKeyboardButton(
-                        " ", url=f" "),
+                        "🗯️ ʜᴇʀᴏᴋᴜ", url=f"https://dashboard.heroku.com/"),
                     InlineKeyboardButton(
                         "🌐 ɢɪᴛʜᴜʙ", url=f"https://github.com/UnknownMortal/Music-Bot-v2")
                 ],
