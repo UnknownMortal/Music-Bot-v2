@@ -48,12 +48,12 @@
         "SUPPORT": {
             "description": "fill with your bot support group, please fill valid username",
             "required": false,
-            "value": "TeamCodexun"
+            "value": "M8N_SUPPORT"
         },
         "UPDATE": {
             "description": "fill with your bot update channel, please fill valid username",
             "required": false,
-            "value": "Codexun"
+            "value": "M8N_OFFICIAL"
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
