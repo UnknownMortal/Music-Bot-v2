@@ -41,5 +41,5 @@
 
 <br>
 
-<b> M8N Music v2 is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b>
+<b> ### [M8N Music v2](https://github.com/UnknownMortal/Music-Bot-v2) is a Telegram Bot project that allows you to play music on Telegram through Telegram Voice Chat Feature</b>
 
