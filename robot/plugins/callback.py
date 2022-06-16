@@ -53,7 +53,7 @@ async def cbhome(_, query: CallbackQuery):
                     InlineKeyboardButton(
                         "🍭 ᴄʀᴇᴅɪᴛs", callback_data="credit"),
                     InlineKeyboardButton(
-                        "🍀 ᴍᴇɴᴜ", callback_data="abmenu")
+                        "🍀 ʀᴇᴘᴏ ɪɴғᴏ", callback_data="repoinfo")
                 ]
            ]
         ),
@@ -84,3 +84,10 @@ async def cbhome(_, query: CallbackQuery):
             ]
         ),
     )
+
+
+
+@Client.on_callback_query(filters.regex("repoinfo"))
+async def cbhome(_, query: CallbackQuery):
+    await query.edit_message_text(
+        f"""
