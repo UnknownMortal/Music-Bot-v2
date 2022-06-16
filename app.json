@@ -13,7 +13,7 @@
         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": "2056407064"
+            "value": "5058236569"
         },
         "ASSID": {
             "description": "fill with telegram id of your assistant account",
@@ -68,7 +68,7 @@
         "SUDO_USERS": {
             "description": "fill with the user id who can you want to set as sudo user (separate with space).",
             "required": true,
-            "value": "2056407064"
+            "value": ""
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
