@@ -1,3 +1,12 @@
+#
+# Copyright (C) by M8N@Github, < https://github.com/UnknownMortal >.
+#
+# This file is part of < https://github.com/UnknownMortal/Music-Bot-v2 > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/UnknownMortal/Music-Bot-v2/blob/main/LICENSE >
+#
+# All rights reserved !!
+
 import asyncio
 import importlib
 import time
