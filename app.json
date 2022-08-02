@@ -1,5 +1,5 @@
 {
-    "name": "M8N Music Bot v2.0",
+    "name": "ՏհɑƘíժɑ | Music bot",
     "description": "Telegram Music Bot from Team M8N allows you to stream music trought the telegram voice chat feature !!",
    "logo": "https://telegra.ph/file/7c8fc17112d22814da2e9.jpg",
     "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
@@ -13,12 +13,12 @@
         "OWNER_ID": {
             "description": "fill with your telegram id as the owner of the bot",
             "required": true,
-            "value": "5058236569"
+            "value": "5065752827"
         },
         "OWNER_USERNAME": {
             "description": "fill with the bot owner username without @",
             "required": true,
-            "value": "Its_romeoo"
+            "value": "AANDAVAR8064"
         },
         "ASSID": {
             "description": "fill with telegram id of your assistant account",
