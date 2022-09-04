@@ -65,7 +65,7 @@ cd robot
 pip3 install -U -r requirements.txt
 cp example.env .env #Use vim to edit ENVs
 vim .env #Fill up your ENVs ( Steps press i to enter in insert mode then edit the file. Press Esc to exit the editing mode then type :wq! and press Enter key to save the file.)
-python3 main.py # Run the bot
+python3 robot # Run the bot
 ```
 
 <br>
